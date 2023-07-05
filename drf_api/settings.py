@@ -62,7 +62,7 @@ SECRET_KEY = os.getenv('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = 'DEV' in os.environ
 
-ALLOWED_HOSTS = ['localhost', 'gw2forumapi.herokuapp.com']
+ALLOWED_HOSTS = ['localhost', 'gw2forumapi-7625ca6fa938.herokuapp.com']
 
 
 # Application definition
