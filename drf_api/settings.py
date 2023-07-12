@@ -63,7 +63,7 @@ SECRET_KEY = os.getenv('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = 'DEV' in os.environ
 
-ALLOWED_HOSTS = ['localhost', 'gw2forumapi-7625ca6fa938.herokuapp.com']
+ALLOWED_HOSTS = ['localhost', 'gw2forumapi-7625ca6fa938.herokuapp.com', '8000-natbat92-drfapi-c75jlqil5tb.ws-eu101.gitpod.io']
 
 if 'CLIENT_ORIGIN' in os.environ:
     CORS_ALLOWED_ORIGINS = [
