@@ -29,7 +29,7 @@ class Post(models.Model):
     title = models.CharField(max_length=255)
     content = models.TextField(blank=True)
     image = models.ImageField(
-        upload_to='images/', default='../gw2-logo_gxzkpu', blank=True
+        upload_to='images/', default='../gw2_logo_f1jkjh', blank=True
     )
     image_filter = models.CharField(
         max_length=32, choices=image_filter_choices, default='normal'

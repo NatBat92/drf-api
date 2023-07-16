@@ -10,7 +10,7 @@ class Profile(models.Model):
     name = models.CharField(max_length=255, blank=True)
     content = models.TextField(blank=True)
     image = models.ImageField(
-        upload_to='images/', default= '../gw2-logo_gxzkpu'
+        upload_to='images/', default='../gw2_logo_f1jkjh'
     )
 
     class Meta:
