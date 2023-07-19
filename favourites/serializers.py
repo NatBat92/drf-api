@@ -11,9 +11,6 @@ class FavouriteSerializer(serializers.ModelSerializer):
         fields = ['id', 'created_at', 'owner', 'post']
 
     def create(self, validated_data):
-        """
-        Prevents users from adding a post as a favourite multiple times
-        """
         try:
             return super().create(validated_data)
         except IntegrityError:
