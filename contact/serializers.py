@@ -9,3 +9,4 @@ class ContactSerializer(serializers.ModelSerializer):
             'name', 'last_name', 'email',
             'subject', 'message',
         ]
+        
