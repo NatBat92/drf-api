@@ -29,6 +29,15 @@ class PostSerializer(serializers.ModelSerializer):
             )
         return value
 
+    def get_favourite_id(self, obj):
+        user = self.context['request'].user
+        if user.is_authenticated:
+            favourite = Favourite.objects.filter(
+                owner=user, post=obj
+            ).first()
+            return favourite.id if favourite else None
+        None
+
     def get_is_owner(self, obj):
         request = self.context['request']
         return request.user == obj.owner
