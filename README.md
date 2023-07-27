@@ -2,15 +2,15 @@
 
 ## Introduction
 
-The Guild Wars forum is a place for people who love the Guild Wars franchise. Users can post their reviews to the community, follow other users, like posts, favorite posts, comment on posts, and contact the admin. 
+The Guild Wars forum is a place for people who love the Guild Wars franchise. Users can post their reviews to the community, follow other users, like posts, favourite posts, comment on posts, and contact the admin. should they wish to report inappropriate posts/comments or delete their account. 
 
 This repository holds the Django Rest Framework (DRF) API database for the ReactJS frontend part of the project. 
 
 ![Image showing the website's responsiveness on different screens](docs/am-i-reponsive-image.png)
 
-- [Deployed Front End Site](https://gw2-forum-3bb633979161.herokuapp.com/)
+- [Deployed Front-End Site](https://gw2-forum-3bb633979161.herokuapp.com/)
 
-- [Repository for Front End Site](https://github.com/NatBat92/guild-wars-2-forum)
+- [Repository for Front-End Site](https://github.com/NatBat92/guild-wars-2-forum)
 
 - [Deployed API Site](https://gw2forumapi-7625ca6fa938.herokuapp.com/)
 
@@ -21,7 +21,7 @@ This repository holds the Django Rest Framework (DRF) API database for the React
 
 ## Validator Testing
 
-All python files passed through the PEP8 validator with no issues
+All python files passed through the PEP8 validator with no issues or errors found.
 
 Contact:
 
@@ -74,29 +74,29 @@ Posts:
 ***
 ## Testing
 
-Backend Manual Testing
+Back-end Manual Testing
 
 |Area|Test|Result|
 |---|---|----|
-|Deployed site|Home shows message and no errors|PASS|
-||/profiles/ shows all profiles|PASS|
-||/profiles/:id shows single profile|PASS|
-||/posts/ shows all posts|PASS|
-||/posts/:id shows single post|PASS|
-||/comments/shows all comments|PASS|
-||/comments/:id shows single comment|PASS|
-||/favourites/shows all favourites|PASS|
-||/likes/shows all likes|PASS|
-||/admin/ allows superuser to login|PASS|
-||/admin/ basic admin view and functions|PASS|
-|Dev site|/posts/ show pagination|PASS|
-||/posts/ show text search by user__username|PASS|
-||/admin/ shows login for Superuser and then loads admin panel|PASS|
+|Deployed site|/Home/ - shows message and no errors|PASS|
+||/profiles/ - shows all profiles|PASS|
+||/profiles/:id - shows single profile|PASS|
+||/posts/ - shows all posts|PASS|
+||/posts/:id - shows single post|PASS|
+||/comments/ - shows all comments|PASS|
+||/comments/:id - shows single comment|PASS|
+||/favourites/ - shows all favourites|PASS|
+||/likes/ - shows all likes|PASS|
+||/admin/ - allows Superuser to login|PASS|
+||/admin/ - basic admin view and functions|PASS|
+|Development site|/posts/ - show pagination|PASS|
+||/posts/ - show text search by user__username|PASS|
+||/admin/ - shows login for Superuser and then loads admin panel|PASS|
 
 
 ### Manual testing of user stories
 
-- As an admin, I want to be able to create, edit and delete the users, posts, comments and likes, so that I can have a control over the content of the application and remove any potential inappropriate content
+- As an admin, I want to be able to create, edit and delete users, posts, comments and likes. This is to ensure I can monitor and validate the contents pf posts and comments being submitted by the users, removing any potential inappropriate or offensive content.
 
 **Test** | **Action** | **Expected Result** | **Actual Result**
 -------- | ------------------- | ------------------- | -----------------
@@ -128,7 +128,7 @@ None identified
 
 ### Python Modules Used
 
-- Built-in Packages/Modules
+- Built-in Packages/Modules:
   - [os](https://docs.python.org/3/library/os.html) - This module provides a portable way of using operating system dependent functionality.
 
 ### Packages Used
@@ -140,7 +140,7 @@ None identified
   - [django-allauth](https://pypi.org/project/django-allauth/) - Set of Django application used for account registration, management and authentication.
   - [dj-rest-auth](https://pypi.org/project/dj-rest-auth/) - API endpoints for handling authentication in Django Rest Framework.
   - [django-filter](https://pypi.org/project/django-filter/) - Application that allows dynamic QuerySet filtering from URL parameters.
-  - [djangorestframework-simplejwt](https://pypi.org/project/djangorestframework-simplejwt/) - JSON Web Token authentication backend for the Django REST Framework.
+  - [djangorestframework-simplejwt](https://pypi.org/project/djangorestframework-simplejwt/) - JSON Web Token authentication back-end for the Django REST Framework.
   - [django-cors-headers](https://pypi.org/project/django-cors-headers/) - Django App that adds CORS headers to responses.
   - [gunicorn](https://pypi.org/project/gunicorn/) - Python WSGI HTTP Server.
   - [psycopg2](https://pypi.org/project/psycopg2) - Python PostgreSQL database adapter.
@@ -158,12 +158,12 @@ None identified
 ## Deployment
 ### Forking the GitHub Repository
 
-By forking the GitHub Repository we make a copy of the original repository on
-our GitHub account to view and/or make changes without affecting the original
+By forking the GitHub Repository, you can make a copy of the original repository on
+the GitHub account to view and/or make changes without affecting the original
 repository by using the following steps...
 
 1. Log in to GitHub and locate the [GitHub
-   Repository](https://github.com/NatBat92/drf-api)
+   Repository](https://github.com/NatBat92/drf-api).
 1. At the top of the Repository (not top of page) just above the "Settings"
    Button on the menu, locate the "Fork" Button.
 1. Click the button (not the number to the right) and you should now have a copy
@@ -173,7 +173,7 @@ repository by using the following steps...
 
 **NOTE**: It is a requirement of the project that you have Python version 3.8 or higher installed locally.
 
-1. Log in to GitHub and locate the [GitHub Repository](https://github.com/NatBat92/drf-api).
+1. Log into GitHub and locate the [GitHub Repository](https://github.com/NatBat92/drf-api).
 1. Under the repository name, click "Code".
 1. To clone the repository using HTTPS, under "HTTPS", copy the link.
 1. Open your local terminal with git installed
@@ -199,10 +199,10 @@ repository by using the following steps...
 
 1. Change the current working directory to the cloned project folder (this will be a child directory in the location you cloned the project).
 
-1. It is recommended to use a virtual environment during development ([learn more about virtual environments](https://realpython.com/python-virtual-environments-a-primer/)). If you would prefer not to use one please skip the following steps:
+1. It is recommended to use a virtual environment during development ([learn more about virtual environments](https://realpython.com/python-virtual-environments-a-primer/)). If you would prefer not to use one, please skip the following steps:
     1. Create a virtual environment in the projects working directory by entering the following command in the same terminal window used for the steps above `python3 -m venv .venv`.
     1. Before use, the virtual environment will need to be activated using the command `source .venv/bin/activate` in the same terminal window used previously.
-1. Packages required by the project can now using the command `pip install -r requirements.txt`
+1. Packages required by the project can now be added using the command `pip install -r requirements.txt`
 1. In the cloned directory, rename the file `.env-example` to `.env` and populate it with the information required.
 1. Make Django migrations using the command `./manage.py migrate`.
 
@@ -212,9 +212,9 @@ repository by using the following steps...
 
 - A Cloudinary account, create one for free at [https://cloudinary.com](https://cloudinary.com).
 
-**NOTE**: It is assumed you have followed all deployment instructions listed in this readme starting with the section titled 'Forking the GitHub Repository'.
+**NOTE**: It is assumed you have followed all deployment instructions listed in this readme, starting with the section titled 'Forking the GitHub Repository'.
 
-1. Log in to [Heroku](https://www.heroku.com/) and if not taken there automatically, navigate to your personal app dashboard.
+1. Log into [Heroku](https://www.heroku.com/) and if not taken there automatically, navigate to your personal app dashboard.
 1. At the top of the page locate the 'New' drop down, click it and then select 'Create new app'.
 1. Give your application a unique name, select a region appropriate to your location and click the 'Create app' button.
 1. Your app should now be created, so from the menu towards the top of the page select the 'Resources' section.
@@ -241,8 +241,8 @@ repository by using the following steps...
 
 - Code Institute's Moments project was used to lay the foundations of this project and was adapted on to create a unique project.  
 
-- My fiance Emma for testing my code and giving me that push and confidence to get this over the line
+- My fiance, Emma, for testing my code and giving me that push and confidence to get this over the line
 
-- My Mentor Gareth for going through my project and letting me know what I can do to improve things/ provide desireable features for my users.
+- My mentor, Gareth, for going through my project and letting me know what I can do to improve things/provide desirable features for my users.
 
 ***
