@@ -2,9 +2,9 @@
 
 ## Introduction
 
-The Guild Wars forum is a place for people who love the Guild Wars franchise. Users can post their reviews to the community, follow other users, like posts, favourite posts, comment on posts, and contact the admin. should they wish to report inappropriate posts/comments or delete their account. 
+The Guild Wars forum is a place for people who love the Guild Wars franchise. Users can post their reviews to the community, follow other users, like and favourite posts and comment on posts made by other users. Users can also contact the administrator, should they wish to report inappropriate posts/comments or delete their account. 
 
-This repository holds the Django Rest Framework (DRF) API database for the ReactJS frontend part of the project. 
+This repository holds the Django Rest Framework (DRF) API database for the ReactJS front-end part of the project. 
 
 ![Image showing the website's responsiveness on different screens](docs/am-i-reponsive-image.png)
 
@@ -112,8 +112,6 @@ Favourite | Create & delete | Favourite or Unfavourite post | Works as expected
 ***
 ## Bugs
 
-### Unfixed
-
 None identified
 
 ***
@@ -160,7 +158,7 @@ None identified
 
 By forking the GitHub Repository, you can make a copy of the original repository on
 the GitHub account to view and/or make changes without affecting the original
-repository by using the following steps...
+repository by using the following steps:
 
 1. Log in to GitHub and locate the [GitHub
    Repository](https://github.com/NatBat92/drf-api).
@@ -176,7 +174,7 @@ repository by using the following steps...
 1. Log into GitHub and locate the [GitHub Repository](https://github.com/NatBat92/drf-api).
 1. Under the repository name, click "Code".
 1. To clone the repository using HTTPS, under "HTTPS", copy the link.
-1. Open your local terminal with git installed
+1. Open your local terminal with git installed.
 1. Change the current working directory to the location where you want the cloned directory to be created.
 1. Type `git clone`, and then paste the URL you copied in Step 3.
 
@@ -202,7 +200,7 @@ repository by using the following steps...
 1. It is recommended to use a virtual environment during development ([learn more about virtual environments](https://realpython.com/python-virtual-environments-a-primer/)). If you would prefer not to use one, please skip the following steps:
     1. Create a virtual environment in the projects working directory by entering the following command in the same terminal window used for the steps above `python3 -m venv .venv`.
     1. Before use, the virtual environment will need to be activated using the command `source .venv/bin/activate` in the same terminal window used previously.
-1. Packages required by the project can now be added using the command `pip install -r requirements.txt`
+1. Packages required by the project can now be added using the command `pip install -r requirements.txt`.
 1. In the cloned directory, rename the file `.env-example` to `.env` and populate it with the information required.
 1. Make Django migrations using the command `./manage.py migrate`.
 
@@ -210,7 +208,7 @@ repository by using the following steps...
 
 **NOTE**: It is a prerequisite of deployment to Heroku that you already have access to the following:
 
-- A Cloudinary account, create one for free at [https://cloudinary.com](https://cloudinary.com).
+- A Cloudinary account (If you don't have a Cloudinary account, you can create one for free at [https://cloudinary.com](https://cloudinary.com)).
 
 **NOTE**: It is assumed you have followed all deployment instructions listed in this readme, starting with the section titled 'Forking the GitHub Repository'.
 
@@ -224,8 +222,8 @@ repository by using the following steps...
     1. Key as `CLOUDINARY_URL` and the value as your cloudinary API Environment variable e.g. `cloudinary://**************:**************@*********`. Click the Add button.
     1. Key as `SECRET_KEY` and the value as a complex string which will be used to provide cryptographic signing. Click the Add button.
     1. Ensure the key `DATABASE_URL` is already populated. This should have been created automatically by Heroku.
-    1. The `DATABASE_URL` should be copied into your local `.env`, created during the cloning process.(Add the address to your ElephantSQL respository)
-    1. To make authenticated requests to this API (e.g. from a fontend application) you are required to add the key `CLIENT_ORIGIN` with the value set as the URL you will be sending the authentication request from.
+    1. The `DATABASE_URL` should be copied into your local `.env`, created during the cloning process (add the address to your ElephantSQL respository).
+    1. To make authenticated requests to this API (e.g. from a front-end application), you are required to add the key `CLIENT_ORIGIN` with the value set as the source URL sending the authentication request.
     1. Additionally, a `CLIENT_ORIGIN_DEV` key can be set with the value of a development server (IP or URL) for use during local development.
 1. Open the `.env` file in the project directory and delete the key / value pair `DEV_ENVIRONMENT_DATABASE = True` before saving the file. This can be added back after the next step to ensure local development changes will not alter the remote database.
 1. Navigate to the 'Deploy' page using the menu towards the top of the page.
