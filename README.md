@@ -6,13 +6,15 @@ The Guild Wars forum is a place for people who love the Guild Wars franchise. Us
 
 This repository holds the Django Rest Framework (DRF) API database for the ReactJS frontend part of the project. 
 
-- [Deployed Front End Site]
+![Image showing the website's responsiveness on different screens](docs/am-i-reponsive-image.png)
 
-- [Repository for Front End Site]
+- [Deployed Front End Site](https://gw2-forum-3bb633979161.herokuapp.com/)
 
-- [Deployed API Site]
+- [Repository for Front End Site](https://github.com/NatBat92/guild-wars-2-forum)
 
-- [Repository for API Site]
+- [Deployed API Site](https://gw2forumapi-7625ca6fa938.herokuapp.com/)
+
+- [Repository for API Site](https://github.com/NatBat92/drf-apih)
 
 
 ***
@@ -23,51 +25,51 @@ All python files passed through the PEP8 validator with no issues
 
 Contact:
 
-- [PP8 Contacts] - Models
+- [PP8 Contact](docs/python-linter-contact-models.png) - Models
 
-- [PP8 Contacts] - Serializer
+- [PP8 Contact](docs/python-linter-contact-serializers.png) - Serializer
 
-- [PP8 Contacts] - Views
+- [PP8 Contact](docs/python-linter-contact-views.png) - Views
 
 Likes:
 
-- [PP8 Likes] - Models
+- [PP8 Likes](docs/python-linter-likes-models.png) - Models
 
-- [PP8 Likes] - Serializer
+- [PP8 Likes](docs/python-linter-likes-serializers.png) - Serializer
 
-- [PP8 Likes] - Views
+- [PP8 Likes](docs/python-linter-likes-views.png) - Views
 
 Profiles:
 
-- [PP8 Profiles] - Models
+- [PP8 Profiles](docs/python-linter-profiles-models.png) - Models
 
-- [PP8 Profiles] - Serializer
+- [PP8 Profiles](docs/python-linter-profiles-serializers.png) - Serializer
 
-- [PP8 Profiles] - Views
+- [PP8 Profiles](docs/python-linter-profiles-views.png) - Views
 
 Favourites:
 
-- [PP8 Favourites] - Models
+- [PP8 Favourites](docs/python-linter-favourites-models.png) - Models
 
-- [PP8 Favourites] - Serializer
+- [PP8 Favourites](docs/python-linter-favourites-serializers.png) - Serializer
 
-- [PP8 Favourites] - Views
+- [PP8 Favourites](docs/python-linter-favourites-views.png) - Views
 
-Contact:
+Comments:
 
-- [PP8 Contact] - Models
+- [PP8 Contact](docs/python-linter-comments-models.png) - Models
 
-- [PP8 Contact] - Serializer
+- [PP8 Contact](docs/python-linter-comment-serializers.png) - Serializer
 
-- [PP8 Contact] - Views
+- [PP8 Contact](docs/python-linter-comment-views.png) - Views
 
 Posts:
 
-- [PP8 Posts] - Models
+- [PP8 Posts](docs/python-linter-post-models.png) - Models
 
-- [PP8 Posts] - Serializer
+- [PP8 Posts](docs/python-linter-post-serializers.png) - Serializer
 
-- [PP8 Posts] - Views
+- [PP8 Posts](docs/python-linter-post-views.png) - Views
 
 ***
 ## Testing
@@ -105,6 +107,7 @@ Post | Create, update & delete | A post can be created, edited or deleted | Work
 Comment | Create, update & delete | A comment can be created, edited or deleted | Works as expected
 Like | Create & delete | A like can be created or deleted (like / unlike post) | Works as expected
 Follower | Create & delete | Follow or unfollow user | Works as expected
+Favourite | Create & delete | Favourite or Unfavourite post | Works as expected
 
 ***
 ## Bugs
@@ -153,6 +156,63 @@ None identified
 <hr>
 
 ## Deployment
+### Forking the GitHub Repository
+
+By forking the GitHub Repository we make a copy of the original repository on
+our GitHub account to view and/or make changes without affecting the original
+repository by using the following steps...
+
+1. Log in to GitHub and locate the [GitHub
+   Repository](https://github.com/NatBat92/drf-api)
+1. At the top of the Repository (not top of page) just above the "Settings"
+   Button on the menu, locate the "Fork" Button.
+1. Click the button (not the number to the right) and you should now have a copy
+   of the original repository in your GitHub account.
+
+### Making a Local Clone
+
+**NOTE**: It is a requirement of the project that you have Python version 3.8 or higher installed locally.
+
+1. Log in to GitHub and locate the [GitHub Repository](https://github.com/NatBat92/drf-api).
+1. Under the repository name, click "Code".
+1. To clone the repository using HTTPS, under "HTTPS", copy the link.
+1. Open your local terminal with git installed
+1. Change the current working directory to the location where you want the cloned directory to be created.
+1. Type `git clone`, and then paste the URL you copied in Step 3.
+
+    ```console
+    ~$ git clone https://github.com/NatBat92/drf-api
+    ```
+
+1. Press Enter. Your local clone will be created.
+
+    ```console
+    $ git clone https://github.com/NatBat92/drf-api
+    > Cloning into `test-dir`...
+    > remote: Counting objects: 10, done.
+    > remote: Compressing objects: 100% (8/8), done.
+    > remove: Total 10 (delta 1), reused 10 (delta 1)
+    > Unpacking objects: 100% (10/10), done.
+    ```
+
+    [Click here](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository#cloning-a-repository-to-github-desktop) for a more detailed explanation of the process above with pictures.
+
+1. Change the current working directory to the cloned project folder (this will be a child directory in the location you cloned the project).
+
+1. It is recommended to use a virtual environment during development ([learn more about virtual environments](https://realpython.com/python-virtual-environments-a-primer/)). If you would prefer not to use one please skip the following steps:
+    1. Create a virtual environment in the projects working directory by entering the following command in the same terminal window used for the steps above `python3 -m venv .venv`.
+    1. Before use, the virtual environment will need to be activated using the command `source .venv/bin/activate` in the same terminal window used previously.
+1. Packages required by the project can now using the command `pip install -r requirements.txt`
+1. In the cloned directory, rename the file `.env-example` to `.env` and populate it with the information required.
+1. Make Django migrations using the command `./manage.py migrate`.
+
+### Deploying with Heroku
+
+**NOTE**: It is a prerequisite of deployment to Heroku that you already have access to the following:
+
+- A Cloudinary account, create one for free at [https://cloudinary.com](https://cloudinary.com).
+
+**NOTE**: It is assumed you have followed all deployment instructions listed in this readme starting with the section titled 'Forking the GitHub Repository'.
 
 1. Log in to [Heroku](https://www.heroku.com/) and if not taken there automatically, navigate to your personal app dashboard.
 1. At the top of the page locate the 'New' drop down, click it and then select 'Create new app'.
@@ -175,11 +235,14 @@ None identified
 1. At the bottom of the page find the section named 'Manual deploy', select the 'main' branch in the drop down and click the 'Deploy' button.
 1. Once deployment is complete, click the 'View' button to load the URL of the deployed application.
 
-
 ***
 
 ## Credits
 
 - Code Institute's Moments project was used to lay the foundations of this project and was adapted on to create a unique project.  
+
+- My fiance Emma for testing my code and giving me that push and confidence to get this over the line
+
+- My Mentor Gareth for going through my project and letting me know what I can do to improve things/ provide desireable features for my users.
 
 ***
