@@ -16,8 +16,6 @@ class PostList(generics.ListCreateAPIView):
     queryset = Post.objects.annotate(
         likes_count=Count('likes', distinct=True),
         comments_count=Count('comment', distinct=True),
-        reviews_count=Count('reviews', distinct=True),
-        average_rating=Avg('reviews__rating')
     ).order_by('-created_at')
 
     filter_backends = [
@@ -54,6 +52,4 @@ class PostDetail(generics.RetrieveUpdateDestroyAPIView):
     queryset = Post.objects.annotate(
         likes_count=Count('likes', distinct=True),
         comments_count=Count('comment', distinct=True),
-        reviews_count=Count('reviews', distinct=True),
-        average_rating=Avg('reviews__rating')
     ).order_by('-created_at')
