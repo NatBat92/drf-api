@@ -127,7 +127,7 @@ None identified
 ### Python Modules Used
 
 - Built-in Packages/Modules:
-  - [os](https://docs.python.org/3/library/os.html) - This module provides a portable way of using operating system dependent functionality.
+  - [os](https://docs.python.org/3/library/os.html) - This module provides a portable way of using operating system dependant functionality.
 
 ### Packages Used
 
@@ -149,7 +149,6 @@ None identified
 - [GitPod](https://www.gitpod.io/)
 - [GitHub](https://github.com/)
 - [Heroku](https://heroku.com/)
-
 
 <hr>
 
