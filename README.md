@@ -72,6 +72,7 @@ Posts:
 - [PP8 Posts](docs/python-linter-post-views.png) - Views
 
 ***
+
 ## Testing
 
 Back-end Manual Testing
